@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>blog使用七牛云作为图床 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="七牛云注册官网地址：http://www.qiniu.com/按照要求填写信息注册成功后按照官方说明创建空间ps:七牛云qshell命令行工具  
+上传图片初始配置删除解压包内其他平台的工具，将可执行文件重命名为qshellWindows 系统用户在 开始 菜单栏选择 运行 输入 cmd 回车即可打开 DOS 命令行窗口，然后切换到 qshell.exe 的所在磁盘路径。设置 AccessKey">
+<meta property="og:type" content="article">
+<meta property="og:title" content="blog使用七牛云作为图床">
+<meta property="og:url" content="http://yoursite.com/2016/12/08/blog使用七牛云作为图床/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="七牛云注册官网地址：http://www.qiniu.com/按照要求填写信息注册成功后按照官方说明创建空间ps:七牛云qshell命令行工具  
+上传图片初始配置删除解压包内其他平台的工具，将可执行文件重命名为qshellWindows 系统用户在 开始 菜单栏选择 运行 输入 cmd 回车即可打开 DOS 命令行窗口，然后切换到 qshell.exe 的所在磁盘路径。设置 AccessKey">
+<meta property="og:updated_time" content="2016-12-08T02:35:13.577Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="blog使用七牛云作为图床">
+<meta name="twitter:description" content="七牛云注册官网地址：http://www.qiniu.com/按照要求填写信息注册成功后按照官方说明创建空间ps:七牛云qshell命令行工具  
+上传图片初始配置删除解压包内其他平台的工具，将可执行文件重命名为qshellWindows 系统用户在 开始 菜单栏选择 运行 输入 cmd 回车即可打开 DOS 命令行窗口，然后切换到 qshell.exe 的所在磁盘路径。设置 AccessKey">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-blog使用七牛云作为图床" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/12/08/blog使用七牛云作为图床/" class="article-date">
+  <time datetime="2016-12-08T01:30:30.000Z" itemprop="datePublished">2016-12-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      blog使用七牛云作为图床
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="七牛云注册"><a href="#七牛云注册" class="headerlink" title="七牛云注册"></a>七牛云注册</h1><p>官网地址：<a href="http://www.qiniu.com/" target="_blank" rel="external">http://www.qiniu.com/</a><br>按照要求填写信息<br>注册成功后按照官方说明创建空间<br>ps:七牛云<a href="http://developer.qiniu.com/code/v6/tool/qshell.html" target="_blank" rel="external">qshell命令行工具</a>  </p>
+<h1 id="上传图片"><a href="#上传图片" class="headerlink" title="上传图片"></a>上传图片</h1><h2 id="初始配置"><a href="#初始配置" class="headerlink" title="初始配置"></a>初始配置</h2><p>删除解压包内其他平台的工具，将可执行文件重命名为qshell<br>Windows 系统用户在 开始 菜单栏选择 运行 输入 cmd 回车即可打开 DOS 命令行窗口，然后切换到 qshell.exe 的所在磁盘路径。<br>设置 AccessKey 和 SecretKey<br>命令：qshell account AccessKey SecretKey </p>
+<h2 id="命令大全"><a href="#命令大全" class="headerlink" title="命令大全"></a>命令大全</h2><ol>
+<li><a href="http://github.com/jemygraw/qshell/wiki/account" target="_blank" rel="external">account</a>    设置或显示当前用户的 AccessKey 和 SecretKey  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/dircache" target="_blank" rel="external">dircache</a>    输出本地指定路径下所有的文件列表  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/listbucket" target="_blank" rel="external">listbucket</a>    列举七牛空间里面的所有文件  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/prefop" target="_blank" rel="external">prefop</a>    查询七牛数据处理的结果  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/fput" target="_blank" rel="external">fput</a>    以文件表单的方式上传一个文件  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/rput" target="_blank" rel="external">rput</a>    以分片上传的方式上传一个文件  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/qupload" target="_blank" rel="external">qupload</a>    同步数据到七牛空间，带同步进度信息和数据上传完整性检查  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/qdownload" target="_blank" rel="external">qdownload</a>    从七牛空间同步数据到本地，只支持同步某些前缀的文件和增量同步  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/stat" target="_blank" rel="external">stat</a>    查询七牛空间中一个文件的基本信息  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/delete" target="_blank" rel="external">delete</a>    删除七牛空间中的一个文件  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/move" target="_blank" rel="external">move</a>    移动或重命名七牛空间中的一个文件  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/copy" target="_blank" rel="external">copy</a>    复制七牛空间中的一个文件  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/chgm" target="_blank" rel="external">chgm</a>    修改七牛空间中文件的 MimeType  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/fetch" target="_blank" rel="external">fetch</a>    从 Internet 上抓取一个资源到七牛空间中  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/prefetch" target="_blank" rel="external">prefetch</a>    更新七牛空间中从源站镜像过来的文件  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/batchdelete" target="_blank" rel="external">batchdelete</a>    批量删除七牛空间中的文件，可以直接根据 listbucket 的结果来删除  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/batchchgm" target="_blank" rel="external">batchchgm</a>    批量修改七牛空间中文件的 MimeType  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/batchcopy" target="_blank" rel="external">batchcopy</a>    批量复制七牛空间中的文件到另一个空间  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/batchmove" target="_blank" rel="external">batchmove</a>    批量移动七牛空间中的文件到另一个空间    文档</li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/batchrename" target="_blank" rel="external">batchrename</a>    批量重命名七牛空间中的文件    文档</li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/checkqrsync" target="_blank" rel="external">checkqrsync</a>    检查 qrsync 的同步结果，主要通过比对 dircache 和 listbucket 的结果  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/b64encode" target="_blank" rel="external">b64encode</a>    base64 编码工具，可选是否使用 UrlSafe 方式，默认 UrlSafe  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/b64decode" target="_blank" rel="external">b64decode</a>    base64 解码工具，可选是否使用 UrlSafe 方式，默认 UrlSafe  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/urlencode" target="_blank" rel="external">urlencode</a>    url 编码工具  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/urldecode" target="_blank" rel="external">urldecode</a>    url 解码工具  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/ts2d" target="_blank" rel="external">ts2d</a>    将 timestamp（单位秒）转为 UTC+8:00 中国日期，主要用来检查上传策略的 deadline 参数  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/tms2d" target="_blank" rel="external">tms2d</a>    将 timestamp（单位毫秒）转为 UTC+8:00 中国日期  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/tns2d" target="_blank" rel="external">tns2d</a>    将 timestamp（单位 100 纳秒）转为 UTC+8:00 中国日期  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/d2ts" target="_blank" rel="external">d2ts</a>    将日期转为 timestamp（单位秒）  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/ip" target="_blank" rel="external">ip</a>    根据淘宝的公开 API 查询 ip 地址的地理位置  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/qetag" target="_blank" rel="external">qetag</a>    根据七牛的 qetag 算法来计算文件的 hash  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/unzip" target="_blank" rel="external">unzip</a>    解压 zip 文件，支持 UTF-8 编码和 GBK 编码  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/privateurl" target="_blank" rel="external">privateurl</a>    生成私有空间资源的访问外链  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/saveas" target="_blank" rel="external">saveas</a>    实时处理的 saveas 链接快捷生成工具  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/reqid" target="_blank" rel="external">reqid</a>    七牛自定义头部 X-Reqid 解码工具  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/m3u8delete" target="_blank" rel="external">m3u8delete</a>    根据流媒体播放列表文件删除七牛空间中的流媒体切片  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/buckets" target="_blank" rel="external">buckets</a>    获取当前账号下所有的空间名称  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/domains" target="_blank" rel="external">domains</a>    获取指定空间的所有关联域名  </li>
+</ol>
+<h2 id="上传例子"><a href="#上传例子" class="headerlink" title="上传例子"></a>上传例子</h2><p>命令：qshell fput jakie13 xiangqi1.jpg E:\xiangqi1.jpg  </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/12/08/blog使用七牛云作为图床/" data-id="ciwfrlufv00079kpkcavw7srm" class="article-share-link">Delen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/七牛云-图床/">七牛云 图床</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/12/06/Markdown常见语法/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">Markdown常见语法</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Labels</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R语言-新手-学习-笔记/">R语言 新手 学习 笔记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sonarqube-sonarscanner-sonarlint/">sonarqube sonarscanner sonarlint</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/七牛云-图床/">七牛云 图床</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/R语言-新手-学习-笔记/" style="font-size: 10px;">R语言 新手 学习 笔记</a> <a href="/tags/sonarqube-sonarscanner-sonarlint/" style="font-size: 10px;">sonarqube sonarscanner sonarlint</a> <a href="/tags/七牛云-图床/" style="font-size: 10px;">七牛云 图床</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/12/08/blog使用七牛云作为图床/">blog使用七牛云作为图床</a>
+          </li>
+        
+          <li>
+            <a href="/2016/12/06/Markdown常见语法/">Markdown常见语法</a>
+          </li>
+        
+          <li>
+            <a href="/2016/12/06/sonar学习笔记/">sonar学习笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2016/12/06/R语言学习笔记（一）/">R语言学习笔记（一）</a>
+          </li>
+        
+          <li>
+            <a href="/2016/12/01/测试/">测试</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

@@ -50,7 +50,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -60,6 +60,87 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-blog使用七牛云作为图床" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/12/08/blog使用七牛云作为图床/" class="article-date">
+  <time datetime="2016-12-08T01:30:30.000Z" itemprop="datePublished">2016-12-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/08/blog使用七牛云作为图床/">blog使用七牛云作为图床</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="七牛云注册"><a href="#七牛云注册" class="headerlink" title="七牛云注册"></a>七牛云注册</h1><p>官网地址：<a href="http://www.qiniu.com/" target="_blank" rel="external">http://www.qiniu.com/</a><br>按照要求填写信息<br>注册成功后按照官方说明创建空间<br>ps:七牛云<a href="http://developer.qiniu.com/code/v6/tool/qshell.html" target="_blank" rel="external">qshell命令行工具</a>  </p>
+<h1 id="上传图片"><a href="#上传图片" class="headerlink" title="上传图片"></a>上传图片</h1><h2 id="初始配置"><a href="#初始配置" class="headerlink" title="初始配置"></a>初始配置</h2><p>删除解压包内其他平台的工具，将可执行文件重命名为qshell<br>Windows 系统用户在 开始 菜单栏选择 运行 输入 cmd 回车即可打开 DOS 命令行窗口，然后切换到 qshell.exe 的所在磁盘路径。<br>设置 AccessKey 和 SecretKey<br>命令：qshell account AccessKey SecretKey </p>
+<h2 id="命令大全"><a href="#命令大全" class="headerlink" title="命令大全"></a>命令大全</h2><ol>
+<li><a href="http://github.com/jemygraw/qshell/wiki/account" target="_blank" rel="external">account</a>    设置或显示当前用户的 AccessKey 和 SecretKey  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/dircache" target="_blank" rel="external">dircache</a>    输出本地指定路径下所有的文件列表  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/listbucket" target="_blank" rel="external">listbucket</a>    列举七牛空间里面的所有文件  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/prefop" target="_blank" rel="external">prefop</a>    查询七牛数据处理的结果  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/fput" target="_blank" rel="external">fput</a>    以文件表单的方式上传一个文件  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/rput" target="_blank" rel="external">rput</a>    以分片上传的方式上传一个文件  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/qupload" target="_blank" rel="external">qupload</a>    同步数据到七牛空间，带同步进度信息和数据上传完整性检查  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/qdownload" target="_blank" rel="external">qdownload</a>    从七牛空间同步数据到本地，只支持同步某些前缀的文件和增量同步  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/stat" target="_blank" rel="external">stat</a>    查询七牛空间中一个文件的基本信息  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/delete" target="_blank" rel="external">delete</a>    删除七牛空间中的一个文件  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/move" target="_blank" rel="external">move</a>    移动或重命名七牛空间中的一个文件  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/copy" target="_blank" rel="external">copy</a>    复制七牛空间中的一个文件  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/chgm" target="_blank" rel="external">chgm</a>    修改七牛空间中文件的 MimeType  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/fetch" target="_blank" rel="external">fetch</a>    从 Internet 上抓取一个资源到七牛空间中  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/prefetch" target="_blank" rel="external">prefetch</a>    更新七牛空间中从源站镜像过来的文件  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/batchdelete" target="_blank" rel="external">batchdelete</a>    批量删除七牛空间中的文件，可以直接根据 listbucket 的结果来删除  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/batchchgm" target="_blank" rel="external">batchchgm</a>    批量修改七牛空间中文件的 MimeType  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/batchcopy" target="_blank" rel="external">batchcopy</a>    批量复制七牛空间中的文件到另一个空间  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/batchmove" target="_blank" rel="external">batchmove</a>    批量移动七牛空间中的文件到另一个空间    文档</li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/batchrename" target="_blank" rel="external">batchrename</a>    批量重命名七牛空间中的文件    文档</li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/checkqrsync" target="_blank" rel="external">checkqrsync</a>    检查 qrsync 的同步结果，主要通过比对 dircache 和 listbucket 的结果  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/b64encode" target="_blank" rel="external">b64encode</a>    base64 编码工具，可选是否使用 UrlSafe 方式，默认 UrlSafe  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/b64decode" target="_blank" rel="external">b64decode</a>    base64 解码工具，可选是否使用 UrlSafe 方式，默认 UrlSafe  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/urlencode" target="_blank" rel="external">urlencode</a>    url 编码工具  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/urldecode" target="_blank" rel="external">urldecode</a>    url 解码工具  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/ts2d" target="_blank" rel="external">ts2d</a>    将 timestamp（单位秒）转为 UTC+8:00 中国日期，主要用来检查上传策略的 deadline 参数  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/tms2d" target="_blank" rel="external">tms2d</a>    将 timestamp（单位毫秒）转为 UTC+8:00 中国日期  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/tns2d" target="_blank" rel="external">tns2d</a>    将 timestamp（单位 100 纳秒）转为 UTC+8:00 中国日期  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/d2ts" target="_blank" rel="external">d2ts</a>    将日期转为 timestamp（单位秒）  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/ip" target="_blank" rel="external">ip</a>    根据淘宝的公开 API 查询 ip 地址的地理位置  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/qetag" target="_blank" rel="external">qetag</a>    根据七牛的 qetag 算法来计算文件的 hash  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/unzip" target="_blank" rel="external">unzip</a>    解压 zip 文件，支持 UTF-8 编码和 GBK 编码  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/privateurl" target="_blank" rel="external">privateurl</a>    生成私有空间资源的访问外链  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/saveas" target="_blank" rel="external">saveas</a>    实时处理的 saveas 链接快捷生成工具  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/reqid" target="_blank" rel="external">reqid</a>    七牛自定义头部 X-Reqid 解码工具  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/m3u8delete" target="_blank" rel="external">m3u8delete</a>    根据流媒体播放列表文件删除七牛空间中的流媒体切片  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/buckets" target="_blank" rel="external">buckets</a>    获取当前账号下所有的空间名称  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/domains" target="_blank" rel="external">domains</a>    获取指定空间的所有关联域名  </li>
+</ol>
+<h2 id="上传例子"><a href="#上传例子" class="headerlink" title="上传例子"></a>上传例子</h2><p>命令：qshell fput jakie13 xiangqi1.jpg E:\xiangqi1.jpg  </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/12/08/blog使用七牛云作为图床/" data-id="ciwfrlufv00079kpkcavw7srm" class="article-share-link">Delen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/七牛云-图床/">七牛云 图床</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-Markdown常见语法" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -105,33 +186,7 @@
 <h1 id="粗体与斜体"><a href="#粗体与斜体" class="headerlink" title="粗体与斜体"></a>粗体与斜体</h1><p>用两个 <em> 包含一段文本就是粗体的语法，用一个 </em> 包含一段文本就是斜体的语法。<br>例：<br>**粗体<strong><br>*斜体*<br>效果：  
 </strong>粗体<em>*  
 </em>斜体*  </p>
-<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><p>例：<br>| Tables | Are  | Cool |<br>| ————- | :————-: | —–: |<br>| col 3 is | right-aligned | $1600 |<br>| col 2 is | centered | $12 |<br>| zebra stripes | are neat | $1 |  </p>
-<table>
-<thead>
-<tr>
-<th>dog</th>
-<th>bird</th>
-<th>cat  </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>foo</td>
-<td>foo</td>
-<td>foo  </td>
-</tr>
-<tr>
-<td>bar</td>
-<td>bar</td>
-<td>bar  </td>
-</tr>
-<tr>
-<td>baz</td>
-<td>baz</td>
-<td>baz  </td>
-</tr>
-</tbody>
-</table>
+<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><p>暂时未实现？？<br>例：<br>| Item      |    Value | Qty  |<br>| :——– | ——–:| :–: |<br>| Computer  | 1600 USD |  5   |<br>| Phone     |   12 USD |  12  |<br>| Pipe      |    1 USD | 234  |  </p>
 <h1 id="代码框"><a href="#代码框" class="headerlink" title="代码框"></a>代码框</h1><p>只需要用两个`把中间的代码包裹起来,使用 tab 键即可缩进<br>例：<br>`int i = 0;`<br>效果：<br><code>int i = 0;</code></p>
 <h1 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h1><p>分割线的语法只需要另起一行，连续输入三个星号 <strong><em> 即可。<br>例：<br>\</em></strong><br>效果：  </p>
 <hr>
@@ -146,7 +201,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/06/Markdown常见语法/" data-id="ciwe9k33o0001jkpkq2zk4wfj" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/12/06/Markdown常见语法/" data-id="ciwfrluf900039kpkd7ooce0q" class="article-share-link">Delen</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/">Markdown</a></li></ul>
@@ -187,7 +242,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/06/sonar学习笔记/" data-id="ciwe9k33v0004jkpkjc5yyg8k" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/12/06/sonar学习笔记/" data-id="ciwfrlubz00009kpkj7tds9bg" class="article-share-link">Delen</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sonarqube-sonarscanner-sonarlint/">sonarqube sonarscanner sonarlint</a></li></ul>
@@ -232,13 +287,13 @@
 <li>扩展性：R是一个无与伦比的平台，在其上可使用一种简单而直接的方式编写新的统计方法。它易于扩展，并为快速编程实现新方法提供了一套十分自然的语言。  </li>
 <li>先进：R囊括了在其他软件中尚不可用的、先进的统计计算例程。事实上，新方法的更新速度是以周来计算的。如果你是一位SAS用户，想象一下每隔几天就获得一个新SAS过程的情景。  </li>
 <li>替代工具：如果你不想学习一门新的语言，有各式各样的GUI（Graphical User Interface，图形用户界面）工具通过菜单和对话框提供了与R语言同等的功能。  </li>
-<li>多平台：R可运行于多种平台之上，包括Windows、 UNIX和Mac OS X。这基本上意味着它可以运行于你所能拥有的任何计算机上。<h2 id="怎么用？"><a href="#怎么用？" class="headerlink" title="怎么用？"></a>怎么用？</h2></li>
+<li>多平台：R可运行于多种平台之上，包括Windows、 UNIX和Mac OS X。这基本上意味着它可以运行于你所能拥有的任何计算机上。</li>
 </ol>
-<h2 id="怎么学？"><a href="#怎么学？" class="headerlink" title="怎么学？"></a>怎么学？</h2><h1 id="eclipse安装R语言"><a href="#eclipse安装R语言" class="headerlink" title="eclipse安装R语言"></a>eclipse安装R语言</h1>
+<h1 id="eclipse安装R语言"><a href="#eclipse安装R语言" class="headerlink" title="eclipse安装R语言"></a>eclipse安装R语言</h1>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/06/R语言学习笔记（一）/" data-id="ciwe9k33l0000jkpk7fw8xahf" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/12/06/R语言学习笔记（一）/" data-id="ciwfrlugn000a9kpkboqz0qt6" class="article-share-link">Delen</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/R语言-新手-学习-笔记/">R语言 新手 学习 笔记</a></li></ul>
@@ -277,7 +332,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/01/测试/" data-id="ciwe9k33w0005jkpkp57bo8us" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/12/01/测试/" data-id="ciwfrluew00019kpkig2245me" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -322,7 +377,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/01/hello-world/" data-id="ciwe9k33u0003jkpkk3fqgw2b" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/12/01/hello-world/" data-id="ciwfrlug000089kpkhqrlhuxa" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -342,9 +397,9 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
+    <h3 class="widget-title">Labels</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R语言-新手-学习-笔记/">R语言 新手 学习 笔记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sonarqube-sonarscanner-sonarlint/">sonarqube sonarscanner sonarlint</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R语言-新手-学习-笔记/">R语言 新手 学习 笔记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sonarqube-sonarscanner-sonarlint/">sonarqube sonarscanner sonarlint</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/七牛云-图床/">七牛云 图床</a></li></ul>
     </div>
   </div>
 
@@ -354,14 +409,14 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/R语言-新手-学习-笔记/" style="font-size: 10px;">R语言 新手 学习 笔记</a> <a href="/tags/sonarqube-sonarscanner-sonarlint/" style="font-size: 10px;">sonarqube sonarscanner sonarlint</a>
+      <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/R语言-新手-学习-笔记/" style="font-size: 10px;">R语言 新手 学习 笔记</a> <a href="/tags/sonarqube-sonarscanner-sonarlint/" style="font-size: 10px;">sonarqube sonarscanner sonarlint</a> <a href="/tags/七牛云-图床/" style="font-size: 10px;">七牛云 图床</a>
     </div>
   </div>
 
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Archieven</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a></li></ul>
     </div>
@@ -371,9 +426,13 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Recente berichten</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/12/08/blog使用七牛云作为图床/">blog使用七牛云作为图床</a>
+          </li>
         
           <li>
             <a href="/2016/12/06/Markdown常见语法/">Markdown常见语法</a>
@@ -389,10 +448,6 @@
         
           <li>
             <a href="/2016/12/01/测试/">测试</a>
-          </li>
-        
-          <li>
-            <a href="/2016/12/01/hello-world/">Hello World</a>
           </li>
         
       </ul>
