@@ -7,23 +7,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="sonar简介sonar是一款强大的代码质量管理软件。支持本地和服务端分析
 sonarQubesonarQube是sonar的服务端。使用sonarQube可以自己假设sonar的服务端，并通过网站访问管理。  
-下载官网地址：http://www.sonarqube.org/
-sonarScannersonarLint">
+下载官网地址：http://www.sonarqube.org/ps:  
+
+以前的版本是sonarQube和sonarRunner，现在已不支持。qube至少要5.X版本，最好使用最新">
 <meta property="og:type" content="article">
 <meta property="og:title" content="sonar学习笔记">
 <meta property="og:url" content="http://yoursite.com/2016/12/06/sonar学习笔记/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="sonar简介sonar是一款强大的代码质量管理软件。支持本地和服务端分析
 sonarQubesonarQube是sonar的服务端。使用sonarQube可以自己假设sonar的服务端，并通过网站访问管理。  
-下载官网地址：http://www.sonarqube.org/
-sonarScannersonarLint">
-<meta property="og:updated_time" content="2016-12-06T09:07:35.381Z">
+下载官网地址：http://www.sonarqube.org/ps:  
+
+以前的版本是sonarQube和sonarRunner，现在已不支持。qube至少要5.X版本，最好使用最新">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/qube001.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/qube002.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/qube003.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/qube004.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/qube005.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/qube006.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/qube007.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/qube008.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner001.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner002.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner003.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner004.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner005.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner006.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner007.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner009.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner008.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner015.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner010.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner011.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner012.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner013.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner014.jpg">
+<meta property="og:updated_time" content="2016-12-09T08:04:04.027Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="sonar学习笔记">
 <meta name="twitter:description" content="sonar简介sonar是一款强大的代码质量管理软件。支持本地和服务端分析
 sonarQubesonarQube是sonar的服务端。使用sonarQube可以自己假设sonar的服务端，并通过网站访问管理。  
-下载官网地址：http://www.sonarqube.org/
-sonarScannersonarLint">
+下载官网地址：http://www.sonarqube.org/ps:  
+
+以前的版本是sonarQube和sonarRunner，现在已不支持。qube至少要5.X版本，最好使用最新">
+<meta name="twitter:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/qube001.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -96,12 +123,49 @@ sonarScannersonarLint">
       
         <h1 id="sonar简介"><a href="#sonar简介" class="headerlink" title="sonar简介"></a>sonar简介</h1><p>sonar是一款强大的代码质量管理软件。支持本地和服务端分析</p>
 <h1 id="sonarQube"><a href="#sonarQube" class="headerlink" title="sonarQube"></a>sonarQube</h1><p>sonarQube是sonar的服务端。使用sonarQube可以自己假设sonar的服务端，并通过网站访问管理。  </p>
-<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>官网地址：<a href="http://www.sonarqube.org/" target="_blank" rel="external">http://www.sonarqube.org/</a></p>
-<h1 id="sonarScanner"><a href="#sonarScanner" class="headerlink" title="sonarScanner"></a>sonarScanner</h1><h1 id="sonarLint"><a href="#sonarLint" class="headerlink" title="sonarLint"></a>sonarLint</h1>
+<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>官网地址：<a href="http://www.sonarqube.org/" target="_blank" rel="external">http://www.sonarqube.org/</a><br>ps:  </p>
+<ol>
+<li>以前的版本是sonarQube和sonarRunner，现在已不支持。qube至少要5.X版本，最好使用最新版本  </li>
+<li>sonarQube和scanner版本必须匹配，下载时可以看到对应的版本需求  </li>
+</ol>
+<h2 id="mysql数据库配置"><a href="#mysql数据库配置" class="headerlink" title="mysql数据库配置"></a>mysql数据库配置</h2><p>创建sonar数据库和用户<br>语句：<br><code>CREATE DATABASE sonar CHARACTER SET utf8 COLLATE utf8_general_ci;</code><br><code>CREATE USER &#39;sonar&#39; IDENTIFIED BY &#39;sonar&#39;;</code><br><code>GRANT ALL ON sonar.* TO &#39;sonar&#39;@&#39;%&#39; IDENTIFIED BY &#39;sonar&#39;;</code><br><code>GRANT ALL ON sonar.* TO &#39;sonar&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;sonar&#39;;</code><br><code>FLUSH PRIVILEGES;</code><br>查看运行结果：<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/qube001.jpg" alt="qube1"><br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/qube002.jpg" alt="qube2"><br>ps：mysql至少需要5.6+版本，低版本不支持  </p>
+<h2 id="配置sonarQube"><a href="#配置sonarQube" class="headerlink" title="配置sonarQube"></a>配置sonarQube</h2><p>配置文件为qube安装目录下的conf文件下的sonar.properties文件<br>主要配置内容：数据库地址、账号密码和数据库驱动<br><code>sonar.jdbc.username=数据库用户</code><br><code>sonar.jdbc.password=密码</code><br><code>sonar.jdbc.url=jdbc:mysql://localhost:3307/sonar?</code>  <code>useUnicode=true&amp;characterEncoding=utf8&amp;rewriteBatchedStatements=true&amp;useConfigs=maxPerformance</code><br><code>sonar.jdbc.driver:com.mysql.jdbc.Driver</code><br>ps:  </p>
+<ol>
+<li>数据地址后的四个设置必须带上，这是sonarQube的前置需求  </li>
+<li>数据库驱动只需要配置即可，sonarQube已经集成的大部分驱动，除了oracle。使用oracle数据库需要下载驱动到指定目录下  </li>
+<li>网上教程需要下载mysql驱动是因为版本低的原因（网上教程基本都是低版本的，只能作为参考）  <h2 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h2>启动程序在安装目录的bin文件下，使用自己系统下对应的启动程序即可<br>例：windows64位<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/qube003.jpg" alt="qube3"><br>运行StartSonar.bat即可<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/qube004.jpg" alt="qube4"><br>第一次启动时，如果使用的是mysql数据库，会花费很长时间创建表及插入数据。不要在过程中，关闭窗口<br>数据表：<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/qube005.jpg" alt="qube5"><br>启动后程序可能自动结束<br>原因：  </li>
+<li>使用mysql数据库时，数据库版本不对。需要安装5.6以上版本的mysql数据库  </li>
+<li>配置文件错误。检查配置项是否正确  <h2 id="web访问"><a href="#web访问" class="headerlink" title="web访问"></a>web访问</h2>打开浏览器输入地址：<a href="http://localhost:9000/（默认,可自行配置）" target="_blank" rel="external">http://localhost:9000/（默认,可自行配置）</a><br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/qube006.jpg" alt="qube6"><br>出现类似界面说明服务端启用成功（这是使用中文插件后的界面，初始为英文）  <h2 id="安装中文插件"><a href="#安装中文插件" class="headerlink" title="安装中文插件"></a>安装中文插件</h2>两种方法：  </li>
+<li>下载插件到本地目录，重启服务。插件放在extensions\plugins\目录下  </li>
+<li>在线安装插件<br>登录后（初始用户名和密码均为admin）打开英文界面对应的配置-系统-更新中心，搜索Chinese Pack，安装插件后刷新界面（如果刷新后不是中文界面就重启qube服务在进入）<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/qube007.jpg" alt="qube7"><br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/qube008.jpg" alt="qube8"><br>接下来可以使用sonarScanner分析代码并上传<h1 id="sonarScanner"><a href="#sonarScanner" class="headerlink" title="sonarScanner"></a>sonarScanner</h1><h2 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h2><h3 id="配置scanner"><a href="#配置scanner" class="headerlink" title="配置scanner"></a>配置scanner</h3>配置文件为conf目录下的sonar-scanner.properties<br>配置项：<br><code>sonar.host.url=sonar服务端地址</code><br><code>sonar.sourceEncoding=UTF-8</code><br><code>sonar.login=admin（登录名）</code><br><code>sonar.password=admin（登录密码）</code>  <h3 id="配置系统参数"><a href="#配置系统参数" class="headerlink" title="配置系统参数"></a>配置系统参数</h3>右击计算机-属性-高级系统设置-环境变量<br>新建SONAR_SCANNER_HOME，值为scanner解压目录<br>在path值后加上%SONAR_SCANNER_HOME%\bin;  <h4 id="检查系统参数是否配置成功"><a href="#检查系统参数是否配置成功" class="headerlink" title="检查系统参数是否配置成功"></a>检查系统参数是否配置成功</h4>cmd命令窗口运行sonar-scanner -v命令，出现如下窗口表示配置成功。出错请检查配置及参数设置<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner001.jpg" alt="scanner1">  <h3 id="配置项目"><a href="#配置项目" class="headerlink" title="配置项目"></a>配置项目</h3>在要分析的项目根目录创建sonar-project.properties文件<br>配置项：<br><code>sonar.projectKey=项目名</code><br><code>sonar.projectName=项目名</code><br><code>sonar.projectVersion=版本号</code><br><code>sonar.sources=源文件夹路径（多个用逗号隔开）</code><br><code>sonar.sourceEncoding=UTF-8</code><br><code>binaries=WebRoot/WEB-INF/classes</code>  <h2 id="分析代码"><a href="#分析代码" class="headerlink" title="分析代码"></a>分析代码</h2>打开cmd窗口<br>切换到分析项目的目录<br>使用到的命令：  </li>
+<li>d: –切换根目录  </li>
+<li>cd 文件夹名 –进入指定目录  </li>
+<li>cd .. –返回上级目录<br>图示：<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner002.jpg" alt="scanner2"><br>运行sonar-scanner命令，出现如下信息表示正在分析代码<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner003.jpg" alt="scanner3"><br>最后出现EXECUTION SUCCESS表示分析成功<br>访问网页可以看到分析的项目<br>ps:<br>使用mysql数据库时，最后上传结果比较慢，刚开始首页看不到分析的项目<br>打开配置-项目-后台任务，如下图可以看到正在执行上传任务<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner004.jpg" alt="scanner4"><br>任务执行成功：<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner005.jpg" alt="scanner5">  <h2 id="分析失败"><a href="#分析失败" class="headerlink" title="分析失败"></a>分析失败</h2><h3 id="Unsupported-major-minor-version-52-0"><a href="#Unsupported-major-minor-version-52-0" class="headerlink" title="Unsupported major.minor version 52.0"></a>Unsupported major.minor version 52.0</h3>原因：java版本问题，默认的java版本和sonar不匹配<br>修改方法：  </li>
+<li>cmd命令执行java -version查看当前版本信息<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner006.jpg" alt="scanner6">  </li>
+<li>修改系统参数的JAVA_HOME和path（最好系统和用户的都修改）,cmd命令执行set path<br>ps:java默认版本为path里的第一个jdk对应的版本<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner007.jpg" alt="scanner7">  </li>
+<li>重新打开cmd窗口执行java -version命令查看默认版本<br>ps:必须重新打开cmd窗口才能看到最新的版本</li>
+</ol>
+<h3 id="Fail-to-insert-data-of-CE-task"><a href="#Fail-to-insert-data-of-CE-task" class="headerlink" title="Fail to insert data of CE task.."></a>Fail to insert data of CE task..</h3><p>图示：<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner009.jpg" alt="scanner9"><br>原因：MySQL数据库的max_allowed_packet值太小了，不能一次插入分析的内容数据<br>修改方法：  </p>
+<ol>
+<li>mysql运行show VARIABLES like ‘%max_allowed_packet%’;命令查看当前的设置<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner008.jpg" alt="scanner8">  </li>
+<li>修改mysql的配置文件<br>在[mysqld]下加上max_allowed_packet = 32M  </li>
+<li>重启mysql服务，运行命令查看是否设置成功；成功后再重启sonarQube服务  </li>
+</ol>
+<h2 id="安装两个mysql"><a href="#安装两个mysql" class="headerlink" title="安装两个mysql"></a>安装两个mysql</h2><p>原因：目前大部分计算机使用的都是MySQL5.5，sonar新版本不支持该版本。同时又不希望直接删掉5.5来安装更高的版本<br>方法：  </p>
+<ol>
+<li>下载5.7版本的MySQL数据库，解压到与之前版本不同的目录  </li>
+<li>新增my.ini文件，自定义配置项<br>端口号和地址都不能和旧的相同<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner015.jpg" alt="scanner15">  </li>
+<li>在解压目录下新增对应的data文件夹  </li>
+<li>cmd窗口切换到解压目录的bin文件下  </li>
+<li>运行mysqld install MySql3307  –defaults-file=”D:\mysql-5.7.16-winx64\my.ini”命令<br>MySql3307为新服务的名称，不能和旧的相同。后面的地址为使用的配置文件地址  </li>
+<li>修改注册表<br>6.1 打开regedit程序<br>6.2 HKEY_LOCAL_MACHINE–&gt;SYSTEM–&gt;CurrentControlSet–&gt;Services下找到MySql3307<br>6.3 修改ImagePath<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner010.jpg" alt="scanner10"><br>6.4 重启电脑或打开任务管理器结束explorer.exe,再应用程序-新任务打开explorer.exe  </li>
+<li>启动服务<br>7.1 右键计算机-管理-服务和应用程序-服务，找到MySql3307。查看属性，文件路径是否正确<br>7.2 启动服务<br>7.3 启动失败可能原因<br>7.3.1 文件路径不对，注册表修改后必须重启才有效，方法参照步骤6.4<br>7.3.2 数据库配置错误，初始时只要保留基本配置即可<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner011.jpg" alt="scanner11"><h2 id="web分析结果"><a href="#web分析结果" class="headerlink" title="web分析结果"></a>web分析结果</h2><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner012.jpg" alt="scanner12"><br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner013.jpg" alt="scanner13"><br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner014.jpg" alt="scanner14">  <h1 id="sonarLint"><a href="#sonarLint" class="headerlink" title="sonarLint"></a>sonarLint</h1></li>
+</ol>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/06/sonar学习笔记/" data-id="ciwg5ro4f00037kpkahjghde4" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/12/06/sonar学习笔记/" data-id="ciwhii5fr0004vgpk6j98tai0" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sonarqube-sonarscanner-sonarlint/">sonarqube sonarscanner sonarlint</a></li></ul>
