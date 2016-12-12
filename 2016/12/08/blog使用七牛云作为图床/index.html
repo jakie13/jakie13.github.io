@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="http://yoursite.com">
+  <title>blog使用七牛云作为图床 | Jakie13个人博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="七牛云注册官网地址：http://www.qiniu.com/按照要求填写信息注册成功后按照官方说明创建空间ps:七牛云qshell命令行工具  
+使用七牛工具上传图片初始配置删除解压包内其他平台的工具，将可执行文件重命名为qshellWindows 系统用户在 开始 菜单栏选择 运行 输入 cmd 回车即可打开 DOS 命令行窗口，然后切换到 qshell.exe 的所在磁盘路径。设置 Acce">
+<meta property="og:type" content="article">
+<meta property="og:title" content="blog使用七牛云作为图床">
+<meta property="og:url" content="http://yoursite.com/2016/12/08/blog使用七牛云作为图床/index.html">
+<meta property="og:site_name" content="Jakie13个人博客">
+<meta property="og:description" content="七牛云注册官网地址：http://www.qiniu.com/按照要求填写信息注册成功后按照官方说明创建空间ps:七牛云qshell命令行工具  
+使用七牛工具上传图片初始配置删除解压包内其他平台的工具，将可执行文件重命名为qshellWindows 系统用户在 开始 菜单栏选择 运行 输入 cmd 回车即可打开 DOS 命令行窗口，然后切换到 qshell.exe 的所在磁盘路径。设置 Acce">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/qiniu/%E6%AD%A5%E9%AA%A4%E4%B8%80.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/qiniu/%E6%AD%A5%E9%AA%A4%E4%BA%8C.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/qiniu/%E6%AD%A5%E9%AA%A4%E4%B8%89.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/qiniu/%E6%AD%A5%E9%AA%A4%E5%9B%9B.jpg">
+<meta property="og:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/qiniu/%E4%B8%8A%E4%BC%A0%E6%88%90%E5%8A%9F.jpg">
+<meta property="og:updated_time" content="2016-12-08T08:44:11.358Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="blog使用七牛云作为图床">
+<meta name="twitter:description" content="七牛云注册官网地址：http://www.qiniu.com/按照要求填写信息注册成功后按照官方说明创建空间ps:七牛云qshell命令行工具  
+使用七牛工具上传图片初始配置删除解压包内其他平台的工具，将可执行文件重命名为qshellWindows 系统用户在 开始 菜单栏选择 运行 输入 cmd 回车即可打开 DOS 命令行窗口，然后切换到 qshell.exe 的所在磁盘路径。设置 Acce">
+<meta name="twitter:image" content="http://ohsk3zt5q.bkt.clouddn.com/blog/qiniu/%E6%AD%A5%E9%AA%A4%E4%B8%80.jpg">
+  
+    <link rel="alternative" href="/atom.xml" title="Jakie13个人博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/main.css?v=4.0.0.css">
+  
+
+</head>
+
+<body>
+  <div id="container" q-class="show:isCtnShow">
+    <canvas id="anm-canvas" class="anm-canvas"></canvas>
+    <div class="left-col" q-class="show:isShow">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			<img src="null" class="js-avatar">
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Jakie13</a></h1>
+		</hgroup>
+
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔/">随笔</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a data-idx="0" q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a data-idx="1" q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a data-idx="2" q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+		        
+					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+		        
+					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-sort"></i></div>
+  		<h1 class="header-author js-mobile-header hide">Jakie13</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img src="null" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Jakie13</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔/">随笔</a></li>
+		        
+		        
+		        	<li><a href="/archives/">所有文章</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div id="wrapper" class="body-wrap">
+        <div class="menu-l">
+          <div class="canvas-wrap">
+            <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
+          </div>
+          <div id="js-content" class="content-ll">
+            <article id="post-blog使用七牛云作为图床" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      blog使用七牛云作为图床
+    </h1>
+  
+
+        <a href="/2016/12/08/blog使用七牛云作为图床/" class="archive-article-date">
+  	<time datetime="2016-12-08T01:30:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-08</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="七牛云注册"><a href="#七牛云注册" class="headerlink" title="七牛云注册"></a>七牛云注册</h1><p>官网地址：<a href="http://www.qiniu.com/" target="_blank" rel="external">http://www.qiniu.com/</a><br>按照要求填写信息<br>注册成功后按照官方说明创建空间<br>ps:七牛云<a href="http://developer.qiniu.com/code/v6/tool/qshell.html" target="_blank" rel="external">qshell命令行工具</a>  </p>
+<h1 id="使用七牛工具上传图片"><a href="#使用七牛工具上传图片" class="headerlink" title="使用七牛工具上传图片"></a>使用七牛工具上传图片</h1><h2 id="初始配置"><a href="#初始配置" class="headerlink" title="初始配置"></a>初始配置</h2><p>删除解压包内其他平台的工具，将可执行文件重命名为qshell<br>Windows 系统用户在 开始 菜单栏选择 运行 输入 cmd 回车即可打开 DOS 命令行窗口，然后切换到 qshell.exe 的所在磁盘路径。<br>设置 AccessKey 和 SecretKey<br>命令：<code>qshell account AccessKey SecretKey</code></p>
+<h2 id="命令大全"><a href="#命令大全" class="headerlink" title="命令大全"></a>命令大全</h2><ol>
+<li><a href="http://github.com/jemygraw/qshell/wiki/account" target="_blank" rel="external">account</a>    设置或显示当前用户的 AccessKey 和 SecretKey  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/dircache" target="_blank" rel="external">dircache</a>    输出本地指定路径下所有的文件列表  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/listbucket" target="_blank" rel="external">listbucket</a>    列举七牛空间里面的所有文件  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/prefop" target="_blank" rel="external">prefop</a>    查询七牛数据处理的结果  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/fput" target="_blank" rel="external">fput</a>    以文件表单的方式上传一个文件  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/rput" target="_blank" rel="external">rput</a>    以分片上传的方式上传一个文件  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/qupload" target="_blank" rel="external">qupload</a>    同步数据到七牛空间，带同步进度信息和数据上传完整性检查  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/qdownload" target="_blank" rel="external">qdownload</a>    从七牛空间同步数据到本地，只支持同步某些前缀的文件和增量同步  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/stat" target="_blank" rel="external">stat</a>    查询七牛空间中一个文件的基本信息  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/delete" target="_blank" rel="external">delete</a>    删除七牛空间中的一个文件  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/move" target="_blank" rel="external">move</a>    移动或重命名七牛空间中的一个文件  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/copy" target="_blank" rel="external">copy</a>    复制七牛空间中的一个文件  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/chgm" target="_blank" rel="external">chgm</a>    修改七牛空间中文件的 MimeType  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/fetch" target="_blank" rel="external">fetch</a>    从 Internet 上抓取一个资源到七牛空间中  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/prefetch" target="_blank" rel="external">prefetch</a>    更新七牛空间中从源站镜像过来的文件  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/batchdelete" target="_blank" rel="external">batchdelete</a>    批量删除七牛空间中的文件，可以直接根据 listbucket 的结果来删除  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/batchchgm" target="_blank" rel="external">batchchgm</a>    批量修改七牛空间中文件的 MimeType  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/batchcopy" target="_blank" rel="external">batchcopy</a>    批量复制七牛空间中的文件到另一个空间  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/batchmove" target="_blank" rel="external">batchmove</a>    批量移动七牛空间中的文件到另一个空间    文档</li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/batchrename" target="_blank" rel="external">batchrename</a>    批量重命名七牛空间中的文件    文档</li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/checkqrsync" target="_blank" rel="external">checkqrsync</a>    检查 qrsync 的同步结果，主要通过比对 dircache 和 listbucket 的结果  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/b64encode" target="_blank" rel="external">b64encode</a>    base64 编码工具，可选是否使用 UrlSafe 方式，默认 UrlSafe  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/b64decode" target="_blank" rel="external">b64decode</a>    base64 解码工具，可选是否使用 UrlSafe 方式，默认 UrlSafe  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/urlencode" target="_blank" rel="external">urlencode</a>    url 编码工具  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/urldecode" target="_blank" rel="external">urldecode</a>    url 解码工具  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/ts2d" target="_blank" rel="external">ts2d</a>    将 timestamp（单位秒）转为 UTC+8:00 中国日期，主要用来检查上传策略的 deadline 参数  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/tms2d" target="_blank" rel="external">tms2d</a>    将 timestamp（单位毫秒）转为 UTC+8:00 中国日期  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/tns2d" target="_blank" rel="external">tns2d</a>    将 timestamp（单位 100 纳秒）转为 UTC+8:00 中国日期  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/d2ts" target="_blank" rel="external">d2ts</a>    将日期转为 timestamp（单位秒）  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/ip" target="_blank" rel="external">ip</a>    根据淘宝的公开 API 查询 ip 地址的地理位置  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/qetag" target="_blank" rel="external">qetag</a>    根据七牛的 qetag 算法来计算文件的 hash  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/unzip" target="_blank" rel="external">unzip</a>    解压 zip 文件，支持 UTF-8 编码和 GBK 编码  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/privateurl" target="_blank" rel="external">privateurl</a>    生成私有空间资源的访问外链  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/saveas" target="_blank" rel="external">saveas</a>    实时处理的 saveas 链接快捷生成工具  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/reqid" target="_blank" rel="external">reqid</a>    七牛自定义头部 X-Reqid 解码工具  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/m3u8delete" target="_blank" rel="external">m3u8delete</a>    根据流媒体播放列表文件删除七牛空间中的流媒体切片  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/buckets" target="_blank" rel="external">buckets</a>    获取当前账号下所有的空间名称  </li>
+<li><a href="http://github.com/jemygraw/qshell/wiki/domains" target="_blank" rel="external">domains</a>    获取指定空间的所有关联域名  </li>
+</ol>
+<h2 id="上传例子"><a href="#上传例子" class="headerlink" title="上传例子"></a>上传例子</h2><p>命令：<code>qshell fput jakie13 xiangqi1.jpg E:\xiangqi1.jpg</code> </p>
+<h1 id="七牛网站在线上传"><a href="#七牛网站在线上传" class="headerlink" title="七牛网站在线上传"></a>七牛网站在线上传</h1><p>登录打开自己的存储空间<br>点击内容管理–上传文件<br>选择文件–打开<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/qiniu/%E6%AD%A5%E9%AA%A4%E4%B8%80.jpg" alt="1"><br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/qiniu/%E6%AD%A5%E9%AA%A4%E4%BA%8C.jpg" alt="2"><br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/qiniu/%E6%AD%A5%E9%AA%A4%E4%B8%89.jpg" alt="3"><br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/qiniu/%E6%AD%A5%E9%AA%A4%E5%9B%9B.jpg" alt="4"><br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/qiniu/%E4%B8%8A%E4%BC%A0%E6%88%90%E5%8A%9F.jpg" alt="5"><br>选择上传前可以设置路径前缀来分类文件。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/七牛云-图床/">七牛云 图床</a></li></ul>
+	</div>
+
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/12/08/blog使用七牛云作为图床/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/12/08/使用hexo搭建个人博客/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          使用hexo搭建个人博客
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/12/06/Markdown常见语法/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Markdown常见语法</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Jakie13
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		mathjax: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: true
+	}
+</script>
+
+<script src="/./main.js?v=4.0.0.js"></script>
+
+
+    
+<div class="tools-col" q-class="show:isShow,hide:isShow|isFalse" q-on="click:stop(e)">
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all" q-show="innerArchive">
+        <div class="search-wrap">
+          <input class="search-ipt" q-model="search" type="text" placeholder="find something…">
+          <i class="icon-search icon" q-show="search|isEmptyStr"></i>
+          <i class="icon-close icon" q-show="search|isNotEmptyStr" q-on="click:clearChose(e)"></i>
+        </div>
+        <div class="widget tagcloud search-tag">
+          <p class="search-tag-wording">tag:</p>
+          <label class="search-switch">
+            <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
+          </label>
+          <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">Markdown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">R语言 新手 学习 笔记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">七牛云 图床</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">sonarqube sonarscanner sonarlint</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">hexo blog</a>
+              </li>
+            
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+        <ul class="search-ul">
+          <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
+            缺失模块。<br/>1、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+            2、在根目录_config.yml里添加配置：
+<pre style="font-size: 12px;" q-show="jsonFail">
+  jsonContent:
+    meta: false
+    pages: false
+    posts:
+      title: true
+      date: true
+      path: true
+      text: true
+      raw: false
+      content: false
+      slug: false
+      updated: false
+      comments: false
+      link: false
+      permalink: false
+      excerpt: false
+      categories: false
+      tags: true
+</pre>
+          </p>
+          <li class="search-li" q-repeat="items" q-show="isShow">
+            <a q-attr="href:path|urlformat" class="search-title"><i class="icon-quo-left icon"></i><span q-text="title"></span></a>
+            <p class="search-time">
+              <i class="icon-calendar icon"></i>
+              <span q-text="date|dateformat"></span>
+            </p>
+            <p class="search-tag">
+              <i class="icon-price-tags icon"></i>
+              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
+            </p>
+          </li>
+        </ul>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
+            </li>
+          
+        </ul>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me" q-show="aboutme">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>
