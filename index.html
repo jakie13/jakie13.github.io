@@ -433,7 +433,12 @@
 <li>cmd窗口切换到解压目录的bin文件下  </li>
 <li>运行mysqld install MySql3307  –defaults-file=”D:\mysql-5.7.16-winx64\my.ini”命令<br>MySql3307为新服务的名称，不能和旧的相同。后面的地址为使用的配置文件地址  </li>
 <li>修改注册表<br>6.1 打开regedit程序<br>6.2 HKEY_LOCAL_MACHINE–&gt;SYSTEM–&gt;CurrentControlSet–&gt;Services下找到MySql3307<br>6.3 修改ImagePath<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner010.jpg" alt="scanner10"><br>6.4 重启电脑或打开任务管理器结束explorer.exe,再应用程序-新任务打开explorer.exe  </li>
-<li>启动服务<br>7.1 右键计算机-管理-服务和应用程序-服务，找到MySql3307。查看属性，文件路径是否正确<br>7.2 启动服务<br>7.3 启动失败可能原因<br>7.3.1 文件路径不对，注册表修改后必须重启才有效，方法参照步骤6.4<br>7.3.2 数据库配置错误，初始时只要保留基本配置即可<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner011.jpg" alt="scanner11"><h2 id="web分析结果"><a href="#web分析结果" class="headerlink" title="web分析结果"></a>web分析结果</h2><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner012.jpg" alt="scanner12"><br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner013.jpg" alt="scanner13"><br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner014.jpg" alt="scanner14">  <h1 id="sonarLint"><a href="#sonarLint" class="headerlink" title="sonarLint"></a>sonarLint</h1></li>
+<li>启动服务<br>7.1 右键计算机-管理-服务和应用程序-服务，找到MySql3307。查看属性，文件路径是否正确<br>7.2 启动服务<br>7.3 启动失败可能原因<br>7.3.1 文件路径不对，注册表修改后必须重启才有效，方法参照步骤6.4<br>7.3.2 数据库配置错误，初始时只要保留基本配置即可<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner011.jpg" alt="scanner11"><h2 id="web分析结果"><a href="#web分析结果" class="headerlink" title="web分析结果"></a>web分析结果</h2><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner012.jpg" alt="scanner12"><br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner013.jpg" alt="scanner13"><br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/scanner014.jpg" alt="scanner14">  <h1 id="sonarLint"><a href="#sonarLint" class="headerlink" title="sonarLint"></a>sonarLint</h1><h2 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h2>使用eclipse自带的Marketplace安装<br>ps:安装前最好先卸载掉之前的lint和qube插件<br>方法：help-Installing Details<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/lint001.jpg" alt="lint1">  <h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2>安装成功后打开SonarQube Servers、SonarLint Issues窗口<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/lint002.jpg" alt="lint2"><br>点击SonarQube Servers下的Connect to a SonarQube server<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/lint003.jpg" alt="lint3"><br>输入sonar server的相关信息，确保连接成功<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/lint004.jpg" alt="lint4"><br>右键-Update all..可以同步更新服务端配置到本地<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/lint005.jpg" alt="lint5">  <h2 id="分析项目"><a href="#分析项目" class="headerlink" title="分析项目"></a>分析项目</h2>选择项目-&gt;sonar-lint-&gt;Bind to a SonarProject<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/lint006.jpg" alt="lint6"><br>若之前没有配置SonarProject,则红框内是新增的链接<br>SonarQube Project里可以搜索与服务端匹配的项目，最后点击finish  </li>
+</ol>
+<p>项目图标变为如下情况表示成功<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/lint007.jpg" alt="lint7"><br>ps:  </p>
+<ol>
+<li>每个项目最好匹配同名的服务端项目，避免冲突  </li>
+<li>sonarlint console可以查看执行过程，点击console下拉窗口可以看见<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/lint008.jpg" alt="lint8"><br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/lint009.jpg" alt="lint9">  <h2 id="分析时报错"><a href="#分析时报错" class="headerlink" title="分析时报错"></a>分析时报错</h2><h3 id="打开文件自动分析代码时，IO错误"><a href="#打开文件自动分析代码时，IO错误" class="headerlink" title="打开文件自动分析代码时，IO错误"></a>打开文件自动分析代码时，IO错误</h3><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/lint010.jpg" alt="lint10"><br>产生过程：<br>关联服务端project后取消关联，再次关联分析代码时<br>错误原因：<br>再次关联时配置没有同步下来<br>解决方法：<br>servers-update all project bildings<br>ps:<br>update配置时可能报如下错误，更新失败。重启eclipse即可<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/lint011.jpg" alt="lint11">  <h2 id="查看分析规则详情"><a href="#查看分析规则详情" class="headerlink" title="查看分析规则详情"></a>查看分析规则详情</h2>sonarLint Issues窗口-右键问题-rule description后在SonarLint Rule Description窗口可以看到详情<br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/lint012.jpg" alt="lint12"><br><img src="http://ohsk3zt5q.bkt.clouddn.com/blog/sonar/lint013.jpg" alt="lint13">  </li>
 </ol>
 
       
@@ -708,11 +713,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">sonarqube sonarscanner sonarlint</a>
+                <a href="javascript:void(0)">hexo blog</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">hexo blog</a>
+                <a href="javascript:void(0)">sonarqube sonarscanner sonarlint</a>
               </li>
             
             <div class="clearfix"></div>
